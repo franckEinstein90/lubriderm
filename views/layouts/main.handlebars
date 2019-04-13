@@ -30,11 +30,14 @@
 <div class="aui-page-panel">
     <div class="aui-page-panel-inner">
         <div class="aui-page-panel-nav">
-        {{> page/nav}}        
+        {{> page/appControls}}        
         </div>
 
-        <section class="aui-page-panel-content" style="position:relative">
-        {{{body}}}
+        <section class="aui-page-panel-content"> 
+        {{> page/editorControls}}
+        <div style="position:relative">
+            {{{body}}}
+        </div>
         </section>
     </div>
 </div>
