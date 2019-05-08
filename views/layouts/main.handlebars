@@ -1,7 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="Cache-Control" content="no-store" />
+
     <title>Lubriderm IDE</title>
 	<!--  AUI Core -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -14,7 +19,7 @@
 
 	<!-- AUI Datepicker and Soy templates -->
 	<script src="//aui-cdn.atlassian.com/aui-adg/6.0.9/js/aui-datepicker.min.js"></script>
-	<script src="//aui-cdn.atlassian.com/aui-adg/6.0.9/js/aui-soy.min.js"></script> 
+	<script src="//aui-cdn.atlassian.com/aui-adg/6.0.9/js/aui-soy.min.js"></script>
 </head>
 <body class="aui-page-focused">
 
@@ -26,14 +31,15 @@
 <section id="content" role="main">
   <header class="aui-page-header">
   </header>
-    
+  {{> page/loginForm}}
+
 <div class="aui-page-panel">
     <div class="aui-page-panel-inner">
         <div class="aui-page-panel-nav">
-        {{> page/appControls}}        
+        {{> page/appControls}}
         </div>
 
-        <section class="aui-page-panel-content"> 
+        <section class="aui-page-panel-content">
         {{> page/editorControls}}
         <div style="position:relative">
             {{{body}}}
@@ -44,7 +50,7 @@
 </section>
 </div>
 <script src="/js/ace-build-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-<script src="/js/main.js"></script>
+<script src="/js/main.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 </html>

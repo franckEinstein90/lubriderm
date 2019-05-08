@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
+    "helmet": "^3.18.0",
     "path": "^0.12.7"
   },
   "devDependencies": {
