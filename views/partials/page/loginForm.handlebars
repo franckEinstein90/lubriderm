@@ -2,22 +2,34 @@
     <!-- Dialog header -->
     <header class="aui-dialog2-header">
         <!-- The dialog's title -->
-        <h2 class="aui-dialog2-header-main">Always use sentence case</h2>
-        <!-- Actions to render on the right of the header -->
-        <div class="aui-dialog2-header-secondary">
-            <form class="aui" action="#">
-                <input id="demo-search" class="text" type="search" name="search">
-            </form>
-        </div>
-        <!-- Close icon -->
         <a class="aui-dialog2-header-close">
             <span class="aui-icon aui-icon-small aui-iconfont-close-dialog">Close</span>
         </a>
     </header>
+
     <!-- Main dialog content -->
     <div class="aui-dialog2-content">
-        <p>Hello World</p>
-    </div>
+
+        <div class="field-group">
+
+            <label for="login-name">Email <span class="aui-icon icon-required">(required)</span></label>
+            <input class="text medium-field" type="text" id="login-name" name="login-name" placeholder="you@example.com">
+
+        </div>
+
+        <div class="field-group">
+
+            <label for="password">Password<span class="aui-icon icon-required">(required)</span></label>
+            <input class="text medium-field" type="password" id="password" name="password" 
+                placeholder="password">
+
+        </div>
+
+        <div class="field-group">
+        </div>
+
+    </div>  
+
     <!-- Dialog footer -->
     <footer class="aui-dialog2-footer">
         <!-- Actions to render on the right of the footer -->

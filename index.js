@@ -14,9 +14,9 @@ const hbs = exphbs.create({
         'views/partials'
     ]
 });
+
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-
 app.use('/', indexRouter);
 
 var publicFolderOptions = {
@@ -30,5 +30,6 @@ var publicFolderOptions = {
         res.set('x-timestamp', Date.now())
     }
 }
+
 app.use(express.static('public/', publicFolderOptions));
 app.listen(port, ()=> console.log(`lubriderm listening on port ${port}`));
